@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Notícia</h1>
+
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Título</td>
+            <td>Notícia</td>
+
+        </tr>
+        <% for (var i = 0; i < noticias.length; i++){%>
+        <tr>
+            <!-- quando mostrar variavel tem que colocar o "=" -->
+            <td><%=noticias[i].id_noticia %><!--mostra o id da noticia na tabela--></td>
+            <td><%=noticias[i].titulo %><!--mostra o titulo da noticia na tabela--></td>
+            <td><%=noticias[i].noticia %><!--mostra a noticia da tabela--></td>
+        </tr>
+        <%}%>
+    </table>
+</body>
+</html>
